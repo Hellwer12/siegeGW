@@ -1,3 +1,4 @@
 export default function App() {
-  return <h1 style={{color:"black"}}>APP OK</h1>;
+  console.log("APP LOADED");
+  return <h1>APP OK</h1>;
 }
