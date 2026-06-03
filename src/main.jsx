@@ -1,10 +1,11 @@
-console.log("MAIN.JSX LOADED");
-
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 
-const root = document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-console.log("ROOT:", root)
-
-root.innerHTML = "<h1 style='color:red'>RAW HTML WORKS</h1>"
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
